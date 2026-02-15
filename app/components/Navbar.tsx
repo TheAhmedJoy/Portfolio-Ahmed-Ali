@@ -38,6 +38,25 @@ export default function Navbar() {
                         <Image src={assets.menu_black} className="w-6" alt="Burger Menu Icon" />
                     </button>
                 </div>
+
+                {/*Small Screen Navrbar*/}
+                <ul className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500">
+                    <div className="absolute right-6 top-6">
+                        <Image src={assets.close_black} className="w-5 cursor-pointer" alt="Close Small Screen Navbar"/>
+                    </div>
+                    <li>
+                        <a className="font-Ovo" href="#top">Home</a>
+                    </li>
+                    <li>
+                        <a className="font-Ovo" href="#about">About Me</a>
+                    </li>
+                    <li>
+                        <a className="font-Ovo" href="#word">My Work</a>
+                    </li>
+                    <li>
+                        <a className="font-Ovo" href="#contact">Contact Me</a>
+                    </li>
+                </ul>
             </nav>
         </>
     )
