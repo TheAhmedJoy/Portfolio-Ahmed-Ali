@@ -26,11 +26,17 @@ export default function Navbar() {
                         <a className="font-Ovo" href="#contact">Contact Me</a>
                     </li>
                 </ul>
-                <div>
+                <div className="flex items-center gap-4">
+                    <button>
+                        <Image src={assets.moon_icon} className="w-6" alt="Dark Mode Icon" />
+                    </button>
                     <a href="#contact" className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-14 font-Ovo">
                         Contact
                         <Image src={assets.arrow_icon} className="w-3" alt="Contact Me arrow" />
                     </a>
+                    <button className="block md:hidden ml-3">
+                        <Image src={assets.menu_black} className="w-6" alt="Burger Menu Icon" />
+                    </button>
                 </div>
             </nav>
         </>
