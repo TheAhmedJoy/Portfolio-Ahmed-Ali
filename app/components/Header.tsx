@@ -6,7 +6,7 @@ export default function () {
     return (
         <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center">
             <div>
-                <Image src={assets.profile_img} className="rounded-full w-32" alt="Ahmed Ali Header Profile Image" />
+                <Image src={assets.profile_img} className="rounded-full w-32 mb-3" alt="Ahmed Ali Header Profile Image" />
             </div>
             <h3 className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">
                 Hi! I'm Ahmed Ali
