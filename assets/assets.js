@@ -115,17 +115,10 @@ export const workData = [
     },
 ]
 
-export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
-]
-
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, Tailwind CSS, JavaScript, TypeScript, React, Next.Js, Vue.Js, Ruby, Python, Java, C++, C#, Cypress, Vite.Js, PyTest' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Skills', description: 'HTML, Tailwind CSS, JavaScript, TypeScript, React, Next.Js, Vue.Js, Ruby, Python, Java, C++, C#, Cypress, Selenium, Vite.Js, PyTest' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.S. in Computer Science, California State University - San Marcos' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: "I'm always building projects to keep up with technology trends. Contact me if you would like to collaborate on a project!" }
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: "I'm always building projects to keep up with technology trends. Contact me if you would like to collaborate!" }
 ];
 
 export const toolsData = [
@@ -138,5 +131,4 @@ export const toolsData = [
     { icon: assets.firebase, iconTitle: "Google Cloud Firebase" },
     { icon: assets.postgres_icon, iconTitle: "PostgreSQL" },
     { icon: assets.jira_icon, iconTitle: "Atlassian JIRA" }
-    // assets.git, assets.gcp_icon, assets.aws_icon, assets.docker_icon, assets.vercel_black, assets.firebase, assets.postgres_icon, assets.jira_icon, assets.jenkins_icon
 ];
