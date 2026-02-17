@@ -1,4 +1,5 @@
 import user_image from './user-image.png';
+import user_image_test from './user-image-test.png'
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
@@ -35,8 +36,23 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import vercel_black from './vercel-original-wordmark.svg';
+import docker_icon from './docker-original-wordmark.svg'
+import jira_icon from './jira-original-wordmark.svg'
+import aws_icon from './amazonwebservices-plain-wordmark.svg'
+import gcp_icon from './googlecloud-original.svg'
+import postgres_icon from './postgresql-plain-wordmark.svg'
+import jenkins_icon from './jenkins-original.svg'
 
 export const assets = {
+    jenkins_icon,
+    postgres_icon,
+    aws_icon,
+    gcp_icon,
+    jira_icon,
+    docker_icon,
+    vercel_black,
+    user_image_test,
     user_image,
     code_icon,
     code_icon_dark,
@@ -107,11 +123,20 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, Tailwind CSS, JavaScript, TypeScript, React, Next.Js, Vue.Js, Ruby, Python, Java, C++, C#, Cypress, Vite.Js, PyTest' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.S. in Computer Science, California State University - San Marcos' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: "I'm always building projects to keep up with technology trends. Contact me if you would like to collaborate on a project!" }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    { icon: assets.git, iconTitle: "Github" },
+    { icon: assets.gcp_icon, iconTitle: "Google Cloud Platform" },
+    { icon: assets.aws_icon, iconTitle: "Amazon Web Services" },
+    { icon: assets.docker_icon, iconTitle: "Docker" },
+    { icon: assets.vercel_black, iconTitle: "Vercel" },
+    { icon: assets.jenkins_icon, iconTitle: "Jenkins CI/CD" },
+    { icon: assets.firebase, iconTitle: "Google Cloud Firebase" },
+    { icon: assets.postgres_icon, iconTitle: "PostgreSQL" },
+    { icon: assets.jira_icon, iconTitle: "Atlassian JIRA" }
+    // assets.git, assets.gcp_icon, assets.aws_icon, assets.docker_icon, assets.vercel_black, assets.firebase, assets.postgres_icon, assets.jira_icon, assets.jenkins_icon
 ];

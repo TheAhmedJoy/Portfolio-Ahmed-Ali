@@ -17,4 +17,7 @@
 
   --font-Outfit: "Outfit", sans-serif;
   --font-Ovo: "Ovo", serif; 
+
+  --shadow-blackShadow: 4px 4px 0 #000;
+  --shadow-whiteShadow: 4px 4px 0 #fff;
 }
