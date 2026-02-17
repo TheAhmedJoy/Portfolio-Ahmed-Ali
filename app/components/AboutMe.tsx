@@ -12,7 +12,7 @@ export default function AboutMe() {
                 About Me
             </h2>
 
-            <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+            <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-10">
                 <div className="w-64 sm:w-80 rounded-3xl max-w-none">
                     <Image src={assets.user_image_test} className="w-full rounded-3xl" alt="Ahmed Ali About Me Image" />
                 </div>
