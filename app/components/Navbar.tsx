@@ -46,7 +46,7 @@ export default function Navbar() {
                         <a className="font-Ovo" href="#about">About Me</a>
                     </li>
                     <li>
-                        <a className="font-Ovo" href="#word">My Work</a>
+                        <a className="font-Ovo" href="#work">My Work</a>
                     </li>
                     <li>
                         <a className="font-Ovo" href="#contact">Contact Me</a>
