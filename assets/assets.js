@@ -92,29 +92,6 @@ export const assets = {
     right_arrow_bold_dark
 };
 
-export const workData = [
-    {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
-    },
-    {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
-    },
-    {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
-    },
-    {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
-    },
-]
-
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Skills', description: 'HTML, Tailwind CSS, JavaScript, TypeScript, React, Next.Js, Vue.Js, Ruby, Python, Java, C++, C#, Cypress, Selenium, Vite.Js, PyTest' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.S. in Computer Science, California State University - San Marcos' },
