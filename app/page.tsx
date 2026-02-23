@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import MyWork from "./components/MyWork";
 import ContactMe from "./components/ContactMe";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <AboutMe />
       <MyWork />
       <ContactMe />
+      <Footer />
     </>
   );
 }
