@@ -103,7 +103,6 @@ export const toolsData = [
     { icon: assets.gcp_icon, iconTitle: "Google Cloud Platform" },
     { icon: assets.aws_icon, iconTitle: "Amazon Web Services" },
     { icon: assets.docker_icon, iconTitle: "Docker" },
-    { icon: assets.vercel_black, iconTitle: "Vercel" },
     { icon: assets.jenkins_icon, iconTitle: "Jenkins CI/CD" },
     { icon: assets.firebase, iconTitle: "Google Cloud Firebase" },
     { icon: assets.postgres_icon, iconTitle: "PostgreSQL" },

@@ -2,7 +2,11 @@ import { assets, infoList, toolsData } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 
-export default function AboutMe() {
+interface AboutMeProps {
+    isDarkMode: boolean;
+}
+
+export default function AboutMe( {isDarkMode}: AboutMeProps ) {
     return (
         <div className="w-full px-4 sm:px-6 md:px-[12%] py-10 scroll-mt-20" id="about">
             <h4 className="text-center mb-2 text-lg font-Ovo">
@@ -25,24 +29,24 @@ export default function AboutMe() {
                     <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
                         {infoList.map(({ icon, iconDark, title, description }, index) => (
                             <li className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500
-                                           hover:shadow-blackShadow"
+                                           hover:shadow-blackShadow dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50"
                                 key={index}>
-                                <Image src={icon} className="w-7 mt-3" alt={title} />
-                                <h3 className="my-4 font-semibold text-gray-700">
+                                <Image src={isDarkMode ? iconDark : icon} className="w-7 mt-3" alt={title} />
+                                <h3 className="my-4 font-semibold text-gray-700 dark:text-white">
                                     {title}
                                 </h3>
-                                <p className="text-gray-600 text-sm">
+                                <p className="text-gray-600 text-sm dark:text-white/80">
                                     {description}
                                 </p>
                             </li>
                         ))}
                     </ul>
-                    <h4 className="my-6 text-gray-700 font-Ovo">
+                    <h4 className="my-6 text-gray-700 font-Ovo dark:text-white/80">
                         Tools I use
                     </h4>
                     <ul className="flex items-center gap-2 sm:gap-3 md:gap-5 flex-wrap justify-center lg:justify-start">
                         {toolsData.map(({icon, iconTitle}, index) => (
-                            <li className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+                            <li className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 dark:border-white"
                                 key={index}>
                                 <Image src={icon} className="w-5 sm:w-7" title={iconTitle} alt="Tool" />
                             </li>
