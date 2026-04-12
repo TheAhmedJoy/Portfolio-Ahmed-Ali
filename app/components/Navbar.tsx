@@ -3,8 +3,8 @@ import Image from 'next/image'
 import { assets } from "../../assets//assets"
 
 interface NavbarProps {
-    isDarkMode: boolean;
-    setIsDarkMode: (value: boolean | ((prev: boolean) => boolean)) => void;
+    isDarkMode: boolean
+    setIsDarkMode: (value: boolean | ((prev: boolean) => boolean)) => void
 }
 
 export default function Navbar( {isDarkMode, setIsDarkMode}: NavbarProps ) {
