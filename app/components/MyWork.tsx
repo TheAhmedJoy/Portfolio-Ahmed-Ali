@@ -38,7 +38,7 @@ export default function MyWork() {
       </p>
       <div className="md:grid-cols-2 lg:gap-8 grid grid-cols-1 gap-6">
         {gitRepos.map((repo, index) => (
-          <div className="bg-white shadow-xl rounded-2xl h-100 overflow-hidden border border-gray-40 flex flex-col dark:bg-darkTheme dark:border-white" key={index}>
+          <div className="bg-white shadow-xl rounded-2xl h-100 overflow-hidden border border-gray-40 flex flex-col dark:bg-darkTheme dark:border-white/90" key={index}>
             <div className="h-48 relative border-b border-grey-40">
               <Image src={`https://raw.githubusercontent.com/TheAhmedJoy/${repo.name}/${repo.default_branch}/Thumbnail/thumbnail.png`}
                 fill className="object-cover w-full h-full" alt="Project thumbnail" />
@@ -54,12 +54,12 @@ export default function MyWork() {
                 <a href={repo.html_url} target="_blank" rel="noopener noreferrer"
                   className="px-4 py-2.5 bg-gray-800 dark:bg-neutral-100 text-white rounded-lg font-medium text-sm
                                     text-center flex-1 dark:text-neutral-900 hover:bg-gray-900 dark:hover:bg-neutral-200 
-                                    transition-colors border border-gray-40 font-Outfit">
+                                    transition-colors border border-gray-40 font-Outfit duration-500">
                   View Repo
                 </a>
                 <a href={repo.homepage} target="_blank" rel="noopener noreferrer"
                   className="px-4 py-2.5 bg-gray-40 dark:bg-darkTheme text-gray-800 border rounded-lg font-medium text-sm text-center flex-1 dark:text-neutral-100 
-                        hover:bg-neutral-50 dark:hover:bg-darkHover transition-colors font-Outfit dark:border dark:border-white">
+                        hover:bg-neutral-50 dark:hover:bg-darkHover transition-colors font-Outfit dark:border dark:border-white/90 duration-500">
                   Live Demo
                 </a>
               </div>

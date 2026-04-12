@@ -21,21 +21,29 @@ export default function () {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
-                <a href="#contact" className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent">
+                <a href="#contact" 
+                className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent 
+                dark:hover:bg-darkHover duration-500">
                     Contact Me
                     <Image src={assets.right_arrow_white} className="w-4" alt="Contact Me Arrow Icon" />
                 </a>
-                <a href="/Ahmed Ali Resume.pdf" className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black" download>
+                <a href="/Ahmed Ali Resume.pdf" 
+                className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black
+                hover:bg-gray-900 dark:hover:bg-neutral-200 duration-500" download>
                     My Resume
                     <Image src={assets.download_icon} className="w-4" alt="Resume Download Icon" />
                 </a>
             </div>
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
-                <a target="_blank" href="https://www.linkedin.com/in/ahmedjoyali/" className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black">
+                <a target="_blank" href="https://www.linkedin.com/in/ahmedjoyali/" 
+                className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black hover:bg-gray-900 
+                dark:hover:bg-neutral-200 duration-500">
                     LinkedIn
                     <Image src={assets.arrow_icon} className="w-4" alt="Contact Me Arrow Icon" />
                 </a>
-                <a target="_blank" href="https://github.com/TheAhmedJoy" className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent">
+                <a target="_blank" href="https://github.com/TheAhmedJoy" 
+                className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent dark:hover:bg-darkHover 
+                duration-500">
                     GitHub
                     <Image src={assets.arrow_icon_dark} className="w-3" alt="Resume Download Icon" />
                 </a>
