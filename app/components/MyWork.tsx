@@ -1,6 +1,7 @@
-import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
+import { motion } from "motion/react"
+import { assets } from '@/assets/assets'
 
 export default function MyWork() {
 
@@ -26,19 +27,25 @@ export default function MyWork() {
   }, [])
 
   return (
-    <div id="work" className="w-full px-[12%] py-10 scroll-mt-20">
-      <h4 className="text-center mb-2 text-lg font-Ovo">
+    <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1}} viewport={{once: true}}
+    id="work" className="w-full px-[12%] py-10 scroll-mt-20">
+      <motion.h4 initial={{y: -20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.5, delay: 0.3}} viewport={{once: true}}
+      className="text-center mb-2 text-lg font-Ovo">
         Projects
-      </h4>
-      <h2 className="text-center text-5xl font-Ovo">
+      </motion.h4>
+      <motion.h2 initial={{y: -20, opacity: 0}} whileInView={{y: 20, opacity: 1}} transition={{duration: 0.5, delay: 0.3}} viewport={{once: true}}
+      className="text-center text-5xl font-Ovo">
         My Latest Work
-      </h2>
-      <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovoa">
+      </motion.h2>
+      <motion.p initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.5, delay: 0.7}} viewport={{once: true}}
+      className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovoa">
         Explore a collection of projects showcasing my Full Stack expertise.
-      </p>
-      <div className="md:grid-cols-2 lg:gap-8 grid grid-cols-1 gap-6">
+      </motion.p>
+      <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.6, delay: 0.9}} viewport={{once: true}}
+      className="md:grid-cols-2 lg:gap-8 grid grid-cols-1 gap-6">
         {gitRepos.map((repo, index) => (
-          <div className="bg-white shadow-xl rounded-2xl h-100 overflow-hidden border border-gray-40 flex flex-col dark:bg-darkTheme dark:border-white/90" key={index}>
+          <motion.div whileHover={{scale: 1.05}} transition={{duration: 0.3}}
+          className="bg-white shadow-xl rounded-2xl h-100 overflow-hidden border border-gray-40 flex flex-col dark:bg-darkTheme dark:border-white/90" key={index}>
             <div className="h-48 relative border-b border-grey-40">
               <Image src={`https://raw.githubusercontent.com/TheAhmedJoy/${repo.name}/${repo.default_branch}/Thumbnail/thumbnail.png`}
                 fill className="object-cover w-full h-full" alt="Project thumbnail" />
@@ -64,9 +71,9 @@ export default function MyWork() {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   )
 }
