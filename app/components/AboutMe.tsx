@@ -50,11 +50,11 @@ export default function AboutMe({ isDarkMode }: AboutMeProps) {
                             </motion.li>
                         ))}
                     </motion.ul>
-                    <motion.h4 initial={{y: 20, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.8, delay: 1.3}} viewport={{once: true}}
+                    <motion.h4 initial={{y: 20, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.8, delay: 1}} viewport={{once: true}}
                     className="my-6 text-gray-700 font-Ovo dark:text-white/80">
                         Tools I use
                     </motion.h4>
-                    <motion.ul initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.6, delay: 1.5}} viewport={{once: true}}
+                    <motion.ul initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.6, delay: 1.2}} viewport={{once: true}}
                     className="flex items-center gap-2 sm:gap-3 md:gap-5 flex-wrap justify-center lg:justify-start">
                         {toolsData.map(({ icon, iconTitle }, index) => (
                             <motion.li whileHover={{scale: 1.3}}
