@@ -21,21 +21,21 @@ export default function () {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
-                <a href="#contact" className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2">
+                <a href="#contact" className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent">
                     Contact Me
                     <Image src={assets.right_arrow_white} className="w-4" alt="Contact Me Arrow Icon" />
                 </a>
-                <a href="/Ahmed Ali Resume.pdf" className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2" download>
+                <a href="/Ahmed Ali Resume.pdf" className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black" download>
                     My Resume
                     <Image src={assets.download_icon} className="w-4" alt="Resume Download Icon" />
                 </a>
             </div>
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
-                <a target="_blank" href="https://www.linkedin.com/in/ahmedjoyali/" className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2">
+                <a target="_blank" href="https://www.linkedin.com/in/ahmedjoyali/" className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black">
                     LinkedIn
                     <Image src={assets.arrow_icon} className="w-4" alt="Contact Me Arrow Icon" />
                 </a>
-                <a target="_blank" href="https://github.com/TheAhmedJoy" className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2" download>
+                <a target="_blank" href="https://github.com/TheAhmedJoy" className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent">
                     GitHub
                     <Image src={assets.arrow_icon_dark} className="w-3" alt="Resume Download Icon" />
                 </a>
