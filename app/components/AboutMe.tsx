@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function AboutMe() {
     return (
-        <div className="w-full px-[12%] py-10 scroll-mt-20" id="about">
+        <div className="w-full px-4 sm:px-6 md:px-[12%] py-10 scroll-mt-20" id="about">
             <h4 className="text-center mb-2 text-lg font-Ovo">
                 Introduction
             </h4>
@@ -12,8 +12,8 @@ export default function AboutMe() {
                 About Me
             </h2>
 
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-20 my-10 mx-auto max-w-7xl">
-                <div className="w-64 sm:w-80 rounded-3xl max-w-none">
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-20 my-10 mx-auto max-w-7xl">
+                <div className="w-48 sm:w-64 md:w-80 rounded-3xl max-w-none">
                     <Image src={assets.user_image_test} className="w-full rounded-3xl" alt="Ahmed Ali About Me Image" />
                 </div>
                 <div className="flex-1">
@@ -40,7 +40,7 @@ export default function AboutMe() {
                     <h4 className="my-6 text-gray-700 font-Ovo">
                         Tools I use
                     </h4>
-                    <ul className="flex items-center gap-3 sm:gap-5">
+                    <ul className="flex items-center gap-2 sm:gap-3 md:gap-5 flex-wrap justify-center lg:justify-start">
                         {toolsData.map(({icon, iconTitle}, index) => (
                             <li className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
                                 key={index}>
