@@ -39,7 +39,7 @@ export default function Home() {
       <AboutMe isDarkMode={isDarkMode} />
       <MyWork />
       <ContactMe />
-      <Footer />
+      <Footer isDarkMode={isDarkMode} />
     </>
   );
 }

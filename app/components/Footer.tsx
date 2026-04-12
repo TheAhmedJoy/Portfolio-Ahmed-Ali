@@ -2,11 +2,15 @@ import React from 'react'
 import Image from 'next/image'
 import { assets } from '@/assets/assets'
 
-export default function Footer() {
+interface FooterProps {
+    isDarkMode: boolean
+}
+
+export default function Footer({ isDarkMode }: FooterProps) {
     return (
         <div className="mt-20">
             <div className="text-center">
-                <Image src={assets.logo} className="w-36 mx-auto mb-6" alt="Footer Logo" />
+                <Image src={isDarkMode? assets.logo_dark : assets.logo} className="w-36 mx-auto mb-6" alt="Footer Logo" />
                 <div className="w-max flex items-center gap-2 mx-auto">
                     <Image src={assets.mail_icon} className="w-6" alt="Footer Logo" />
                     theahmedjoyali@gmail.com
