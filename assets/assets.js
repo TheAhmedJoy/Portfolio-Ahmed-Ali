@@ -6,9 +6,7 @@ import edu_icon from './edu-icon.png';
 import edu_icon_dark from './edu-icon-dark.png';
 import project_icon from './project-icon.png';
 import project_icon_dark from './project-icon-dark.png';
-import vscode from './vscode.png';
 import firebase from './firebase.png';
-import figma from './figma.png';
 import git from './git.png';
 import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
@@ -28,10 +26,7 @@ import menu_black from './menu-black.png';
 import menu_white from './menu-white.png';
 import close_black from './close-black.png';
 import close_white from './close-white.png';
-import web_icon from './web-icon.png';
-import mobile_icon from './mobile-icon.png';
 import ui_icon from './ui-icon.png';
-import graphics_icon from './graphics-icon.png';
 import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
@@ -60,9 +55,7 @@ export const assets = {
     edu_icon_dark,
     project_icon,
     project_icon_dark,
-    vscode,
     firebase,
-    figma,
     git,
     mongodb,
     right_arrow_white,
@@ -82,10 +75,7 @@ export const assets = {
     menu_white,
     close_black,
     close_white,
-    web_icon,
-    mobile_icon,
     ui_icon,
-    graphics_icon,
     right_arrow,
     send_icon,
     right_arrow_bold,
@@ -93,7 +83,7 @@ export const assets = {
 };
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Skills', description: 'HTML, Tailwind CSS, JavaScript, TypeScript, React, Next.Js, Vue.Js, Ruby, Python, Java, C++, C#, Cypress, Selenium, Vite.Js, PyTest' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Skills', description: 'HTML, Tailwind CSS, JavaScript, TypeScript, React, Next.Js, Vue.Js, Ruby, Python, Java, C++, C#, Cypress, Selenium, Vite, PyTest' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.S. in Computer Science, California State University - San Marcos' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: "I'm always building projects to keep up with technology trends. Contact me if you would like to collaborate!" }
 ];
@@ -106,5 +96,6 @@ export const toolsData = [
     { icon: assets.jenkins_icon, iconTitle: "Jenkins CI/CD" },
     { icon: assets.firebase, iconTitle: "Google Cloud Firebase" },
     { icon: assets.postgres_icon, iconTitle: "PostgreSQL" },
+    { icon:assets.mongodb, iconTitle: "MongoDB" },
     { icon: assets.jira_icon, iconTitle: "Atlassian JIRA" }
 ];
