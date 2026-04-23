@@ -29,9 +29,9 @@ export default function AboutMe({ isDarkMode }: AboutMeProps) {
                 <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.6, delay: 0.8}} viewport={{once: true}}
                 className="flex-1">
                     <p className="mb-10 max-w-2xl font-Ovo">
-                        I am a dedicated Full Stack Developer with a passion for building scalable, end-to-end web applications that bridge the gap between robust back-end logic and intuitive front-end design.
-                        With a deep proficiency in Frontend and Backend technologies, I specialize in creating high-performance systems that prioritize both user experience and technical efficiency.
-                        Beyond writing clean, maintainable code, I enjoy the challenge of solving complex architectural problems and staying at the forefront of emerging technologies.
+                        I am a Software Developer based in Southern California with a background in test automation. My SDET role at Platform Science gave me a discipline around reliability that most junior developers do not have. 
+                        I build full-stack apps with TypeScript, React, and Next.js. I integrate real APIs - OpenAI, Stripe, Firebase, Google Cloud Functions. 
+                        I am looking for a full-time Software Developer role where I can ship fast and write code that holds up in production.
                     </p>
                     <motion.ul initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.8, delay: 1}} viewport={{once: true}}
                     className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">

@@ -21,8 +21,8 @@ export default function () {
             </motion.h1>
             <motion.p initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.6, delay: 0.7}} viewport={{once: true}}
             className="max-w-2xl mx-auto font-Ovo">
-                Full Stack Developer powered by React/Next.js and strong SWE principles.
-                Highly motivated, detail-oriented with a strong passion for building and learning innovative, and scalable solutions.
+                Software Developer specialising in React and Next.js. I have shipped production code in TypeScript at Platform Science and built AI-powered full-stack apps. 
+                I bring a tester's instinct to development by writing code that lasts.
             </motion.p>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
