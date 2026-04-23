@@ -16,7 +16,15 @@ export default function MyWork() {
 
       for (let i = 0; i < gitRepos.length; i++) {
         if (gitRepos[i].stargazers_count > 0) {
-          gitRepoArr.push(gitRepos[i])
+          const langResponse = await fetch(`https://api.github.com/repos/TheAhmedJoy/${gitRepos[i].name}/languages`)
+          const languages = await langResponse.json()
+          
+          const languageNames = Object.keys(languages)
+          
+          gitRepoArr.push({
+            ...gitRepos[i],
+            languages: languageNames
+          })
         }
       }
 
@@ -51,9 +59,14 @@ export default function MyWork() {
                 fill className="object-cover w-full h-full dark:opacity-75" alt="Project thumbnail" />
             </div>
             <div className="p-6 flex flex-col flex-1">
-              <h3 className="text-xl mb-3 font-Outfit">
+              <h3 className="text-xl mb-1 font-Outfit">
                 {repo.name}
               </h3>
+              {repo.languages && repo.languages.length > 0 && (
+                <p className="text-sm italic text-gray-500 dark:text-gray-400 mb-3">
+                  {repo.languages.sort().join(', ')}
+                </p>
+              )}
               <p className="text-gray-600 text-sm flex-1 mb-6 dark:text-white/90">
                 {repo.description}
               </p>
