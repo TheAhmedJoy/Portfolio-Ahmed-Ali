@@ -17,7 +17,7 @@ export default function () {
             <motion.h1
             initial={{y: -30, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 0.8, delay: 0.5}} viewport={{once: true}}
             className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">
-                Full Stack Developer
+                Software Developer
             </motion.h1>
             <motion.p initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.6, delay: 0.7}} viewport={{once: true}}
             className="max-w-2xl mx-auto font-Ovo">
