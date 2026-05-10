@@ -77,11 +77,19 @@ export default function MyWork() {
                                     transition-colors border border-gray-40 font-Outfit duration-500">
                   View Repo
                 </a>
-                <a href={repo.homepage} target="_blank" rel="noopener noreferrer"
-                  className="px-4 py-2.5 bg-gray-40 dark:bg-darkTheme text-gray-800 border rounded-lg font-medium text-sm text-center flex-1 dark:text-neutral-100 
-                        hover:bg-neutral-50 dark:hover:bg-darkHover transition-colors font-Outfit dark:border dark:border-white/75 duration-500">
-                  Live Demo
-                </a>
+                {repo.homepage ? (
+                  <a href={repo.homepage} target="_blank" rel="noopener noreferrer"
+                    className="px-4 py-2.5 bg-gray-40 dark:bg-darkTheme text-gray-800 border rounded-lg font-medium text-sm text-center flex-1 dark:text-neutral-100 
+                          hover:bg-neutral-50 dark:hover:bg-darkHover transition-colors font-Outfit dark:border dark:border-white/75 duration-500">
+                    Live Demo
+                  </a>
+                ) : (
+                  <button disabled
+                    className="px-4 py-2.5 bg-gray-200 dark:bg-darkTheme text-gray-400 border rounded-lg font-medium text-sm text-center flex-1 dark:text-gray-600 
+                          cursor-not-allowed opacity-50 font-Outfit dark:border dark:border-white/25 duration-500">
+                    Live Demo
+                  </button>
+                )}
               </div>
             </div>
           </motion.div>
