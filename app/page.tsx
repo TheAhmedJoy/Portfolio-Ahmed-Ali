@@ -7,13 +7,14 @@ import MyWork from "./components/MyWork";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
+import { MotionConfig } from "motion/react";
 
 export default function Home() {
 
   const [isDarkMode, setIsDarkMode] = useState(false)
 
   useEffect(() => {
-    if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    if (localStorage.theme === "dark" || (localStorage.theme !== "light" && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       setIsDarkMode(true)
     }
     else {
@@ -28,18 +29,25 @@ export default function Home() {
     }
     else {
       document.documentElement.classList.remove("dark")
-      localStorage.theme = ""
+      localStorage.theme = "light"
     }
   }, [isDarkMode])
 
   return (
-    <>
+    <MotionConfig reducedMotion="user">
+      <a href="#main"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-white focus:text-black
+                   focus:px-4 focus:py-2 focus:rounded-md focus:shadow-lg">
+        Skip to main content
+      </a>
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <Header />
-      <AboutMe isDarkMode={isDarkMode} />
-      <MyWork />
-      <ContactMe />
+      <main id="main">
+        <Header />
+        <AboutMe isDarkMode={isDarkMode} />
+        <MyWork />
+        <ContactMe />
+      </main>
       <Footer isDarkMode={isDarkMode} />
-    </>
+    </MotionConfig>
   );
 }

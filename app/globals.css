@@ -5,8 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Outfit;
-    scroll-behavior: smooth;
+    font-family: var(--font-outfit), sans-serif;
   }
 }
 
@@ -15,8 +14,8 @@
   --color-darkHover: #2a004a;
   --color-darkTheme: #11001F;
 
-  --font-Outfit: "Outfit", sans-serif;
-  --font-Ovo: "Ovo", serif; 
+  --font-Outfit: var(--font-outfit), sans-serif;
+  --font-Ovo: var(--font-ovo), serif;
 
   --shadow-blackShadow: 4px 4px 0 #000;
   --shadow-whiteShadow: 4px 4px 0 #fff;
